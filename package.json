@@ -1,0 +1,31 @@
+{
+  "name": "redux-persist-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel build:w start:w",
+    "build:w": "tsc -w",
+    "start:w": "nodemon ./dist/tests/temp.js -w ./dist",
+    "test": "tsc && mocha ./dist/tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mraronsimon/redux-persist-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mraronsimon/redux-persist-node/issues"
+  },
+  "homepage": "https://github.com/mraronsimon/redux-persist-node#readme",
+  "dependencies": {
+    "mongoose": "^5.5.1",
+    "redux": "^4.0.1",
+    "redux-state-diff": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.3.26",
+    "@types/node": "^11.13.4"
+  }
+}
